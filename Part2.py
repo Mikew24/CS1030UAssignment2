@@ -1,7 +1,11 @@
 """ palindrome checker """
 def palichecker(word):
-    if(len(word)==1): return True
-    if(word[0]==word[len(word)-1]):
-        return palichecker(word[1:len(word)-1])
+    p=''
+    d=[]
+    for char in range(len(word)):
+        d.push(word[char])
+    for x in range(len(word)):
+      p=p+d.pop
+    if(p==word): return True
     return False
 print (palichecker('tacocat'))
